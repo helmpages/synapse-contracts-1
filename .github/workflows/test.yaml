@@ -64,6 +64,11 @@ jobs:
       - name: Installing dependencies
         run: npm install
 
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
